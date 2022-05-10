@@ -1,3 +1,14 @@
+    #!/usr/bin/env python
+# coding: utf-8
+
+# In[16]:
+import tkinter as tk
+from tkinter import ttk
+from tkinter.filedialog import askopenfilename
+import tkinter.font as font
+import pandas as pd
+import numpy as np
+import os
     chemin_fichier = askopenfilename(filetypes=[('Excel', ('*.xls', '*.xlsx')), ('CSV', '*.csv')])
     if chemin_fichier.endswith('.csv'):
         plan = pd.read_csv(chemin_fichier)
